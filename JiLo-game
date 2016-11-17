@@ -1,65 +1,20 @@
-##HiLo game
-   vowel = "aeiouAEIOU"
-    n = 0
-    for n < 10:
-        if char == vowel(n):
-           return True
-        n +=
+## HiLo this program guesses till correct the number you choose between 0 an 100
+hi = 100
+lo = 0
+ans = ''
+while ans != 'c':
+    guess = int((hi - lo) / 2)
+    print 'Is your secret number ', guess
+    print ("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the \
+            the guess is too low. Enter 'c' to indicate I guessed correctly.")
+    ans = str(raw_input())
+    if ans == 'h':
+        hi = guess
+    if ans == 'l':
+        lo = guess
+    if ans == 'c':
+        break
     else:
-        return False
-
-On Sun, Feb 17, 2013 at 10:25 PM, David Cozatt <djcozatt@gmail.com> wrote:
-
-    vowel = "aAeEiIoOuU"
-        return bool(vowel.__contains__(char))
-
-
-    On Sun, Feb 17, 2013 at 9:16 PM, David Cozatt <djcozatt@gmail.com> wrote:
-
-        return min(hi,max(lo,x))
-
-
-
-            ## HiLo this program guesses till correct the number you choose between 0 an 100
-            hi = 100
-            lo = 0
-            ans = ''
-
-            while ans != 'c':
-                guess = int((hi + lo) / 2)
-                print 'Is your secret number ' + str(guess) + '?'
-                print ("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the \
-                        the guess is too low. Enter 'c' to indicate I guessed correctly.")
-                ans = str(raw_input())
-                if ans == 'h':
-                    hi = guess
-                elif ans == 'l':
-                    lo = guess
-                elif ans == 'c':    
-                    print "Game over. Your secret number was: " + str(guess)
-                else:
-                    print ("Sorry I did not understand your input.")
-
-               
-               
-
-
-
-                ## HiLo this program guesses till correct the number you choose between 0 an 100
-                hi = 100
-                lo = 0
-                ans = ''
-                while ans != 'c':
-                    guess = int((hi - lo) / 2)
-                    print 'Is your secret number ', guess
-                    print ("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the \
-                            the guess is too low. Enter 'c' to indicate I guessed correctly.")
-                    ans = str(raw_input())
-                    if ans == 'h':
-                        hi = guess
-                    if ans == 'l':
-                        lo = guess
-                    if ans == 'c':
-                        break
-                    else:
-                        print ("Sorry I did not understand your input.")
+        print ("Sorry I did not understand your input.")
+   
+   

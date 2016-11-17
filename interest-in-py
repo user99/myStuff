@@ -1,0 +1,14 @@
+##Code snippet calculates interest
+#tod read and comment below code
+
+month = 0
+interest = 0
+
+while month < 12:
+    print 'Month: ' + str(month+1)
+    month = month +1
+    min_mnth_pymt = balance * monthlyPaymentRate
+    interest = (balance - min_mnth_pymt) * annualInterestRate / 12
+    print 'Minimum monthly payment: ' + str(round(min_mnth_pymt, 2))
+    balance = balance + interest - min_mnth_pymt
+    print 'Remaining balance: ' + str(round(balance,2))

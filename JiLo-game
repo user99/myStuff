@@ -17,4 +17,4 @@ while ans != 'c':
     else:
         print ("Sorry I did not understand your input.")
    
-   
+## return min(hi,max(lo,x)) 
